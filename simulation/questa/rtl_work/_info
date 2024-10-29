@@ -1,0 +1,73 @@
+m255
+K4
+z2
+!s12c _opt
+Z0 !s99 nomlopt
+!s11f vlog 2023.3 2023.07, Jul 17 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z1 dD:/FPGA/AS2/LAB4/simulation/questa
+T_opt
+!s110 1730127301
+VYGZl6F_4T;8H^9Y9P:JA^0
+04 10 4 work tb_counter fast 0
+=1-e0d045609bd6-671fa5c4-32a-6324
+R0
+!s12b OEM100
+!s124 OEM10U2 
+o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work +acc
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2023.3;77
+vcounter
+2D:/FPGA/AS2/LAB4/RTL/counter.v
+Z3 !s110 1730127300
+!i10b 1
+!s100 R[Yk7lS01;bjPZ=A@@`6]3
+IKbj_3Vz3j?A54;AKmfW_V2
+R1
+w1729680854
+8D:/FPGA/AS2/LAB4/RTL/counter.v
+FD:/FPGA/AS2/LAB4/RTL/counter.v
+!i122 0
+L0 1 25
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2023.3;77
+r1
+!s85 0
+31
+Z6 !s108 1730127300.000000
+!s107 D:/FPGA/AS2/LAB4/RTL/counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/FPGA/AS2/LAB4/RTL|D:/FPGA/AS2/LAB4/RTL/counter.v|
+!i113 0
+Z7 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+!s92 -vlog01compat -work work +incdir+D:/FPGA/AS2/LAB4/RTL -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vtb_counter
+2D:/FPGA/AS2/LAB4/SIM/tb_counter.v
+R3
+!i10b 1
+!s100 C7mT<j7mThA6Vdc:7[TG;0
+IzTHnYPThoH9YmPNW6YiGM2
+R1
+w1730127272
+8D:/FPGA/AS2/LAB4/SIM/tb_counter.v
+FD:/FPGA/AS2/LAB4/SIM/tb_counter.v
+!i122 1
+L0 2 32
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 D:/FPGA/AS2/LAB4/SIM/tb_counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+D:/FPGA/AS2/LAB4/SIM|D:/FPGA/AS2/LAB4/SIM/tb_counter.v|
+!i113 0
+R7
+!s92 -vlog01compat -work work +incdir+D:/FPGA/AS2/LAB4/SIM -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2

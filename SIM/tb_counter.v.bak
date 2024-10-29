@@ -1,0 +1,45 @@
+module tb_counter;
+    reg sys_clk;
+    reg sys_rst_n;
+    wire led_out;
+
+    // 实例化计数器模块
+    counter uut (
+        .sys_clk(sys_clk),
+        .sys_rst_n(sys_rst_n),
+        .led_out(led_out)
+    );
+
+    // 时钟生成，每10ns翻转一次，相当于50MHz的时钟频率
+    initial begin
+        sys_clk = 0;
+        forever #10 sys_clk = ~sys_clk;
+    end
+
+    // 初始化和复位过程
+    initial begin
+        // 初始化复位信号为低
+        sys_rst_n = 0;
+        #100;  // 等待100ns
+
+        // 释放复位信号
+        sys_rst_n = 1;
+        #500_000_000;  // 等待500ms，观察LED的变化
+
+        // 重新复位
+        sys_rst_n = 0;
+        #100;  // 等待100ns
+        sys_rst_n = 1;
+
+        #500_000_000;  // 再次等待500ms，观察LED的变化
+
+        // 结束仿真
+        $finish;
+    end
+
+    // 仿真波形输出
+    initial begin
+        $dumpfile("tb_counter.vcd");
+        $dumpvars(0, tb_counter);
+    end
+endmodule
